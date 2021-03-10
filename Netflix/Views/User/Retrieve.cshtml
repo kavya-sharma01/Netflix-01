@@ -1,0 +1,138 @@
+﻿@using X.PagedList.Mvc.Core;
+@using X.PagedList;
+@model Netflix.Model.Response.UserResponse<Netflix.Model.Models.Users> 
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <title>Users Details</title>
+    <link rel="stylesheet" href="~/css/table.css" />
+    <style>
+
+
+        .pagination {
+            display: inline-block;
+            font: bold;
+        }
+
+            .pagination a {
+                color: black;
+                float: left;
+                padding: 8px 16px;
+                text-decoration: none;
+            }
+
+        .bar {
+            width: 92%;
+            padding: 2pt;
+            margin-bottom: 3%;
+        }
+
+        .pb-3 {
+            background-color: aqua;
+        }
+
+        .headingcolor {
+            background-color: white;
+            text-decoration-style: dashed;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <center>
+            <h2>Client Database</h2>
+        </center>
+
+
+        <div>
+            <input class="bar" type="search" placeholder="Search...">
+            <input type="submit" class="btn-primary">
+
+        </div>
+
+       <!----
+        
+        new X.PagedList.MVC.Common.PagedListRenderOptions
+        {
+        DisplayItemsSliceAndTotal = true,
+        ContainerDivClasses = new[] {"navigation"},
+        LiElementClasses = new [] {"page-item"},
+        PageClasses = new[] {"page-link"},
+
+        })-->
+
+        <table class="table table-bordered">
+            <thead>
+                <tr class="headingcolor">
+                    <th>FirstName</th>
+                    <th>Email</th>
+                    <th>Password</th>
+                    <th>Phone Number</th>
+                    <th>Course</th>
+                    <th>Checkbox</th>
+                    <th>Delete</th>
+                    <th>Edit</th>
+
+
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var list in Model.Data)
+                {
+                    <tr class="bodycolor">
+                        <td>@list.firstname</td>
+                        <td>@list.email</td>
+                        <td>@list.ps</td>
+                        <td>@list.no</td>
+                        <td>@list.course</td>
+                        <td>@list.checkbox</td>
+
+
+                        <td>
+                            @using (Html.BeginForm("Delete", "User", new { id = list.id }))
+                            {
+                                <input type="submit" class="btn-danger" onclick="return confirm('Are u sure u want to delete the user:@list.firstname')" value="Delete" />
+                            }
+                        </td>
+                        <td>
+                            @using (Html.BeginForm("Edit", "User", new { id = list.id }))
+                            {
+                                <input class="btn-success" type="submit" value="Edit" />
+                            }
+                        </td>
+
+                    </tr>
+                }
+            </tbody>
+        </table>
+
+
+        <div class="pagination">
+            <a href="#">&laquo;</a>
+            <a href="#">1</a>
+            <a href="#">2</a>
+            <a href="#">3</a>
+            <a href="#">&raquo;</a>
+
+        </div>
+@section script{ 
+        <script>
+
+            $(document).ready(function () {
+
+                $('ul.pagination > li.disabled > a').addClass("page-link");
+
+            });
+        if ("@TempData["deleted"]" == "True") {
+            alert("@TempData["Errormessage"]");;
+       }
+       else{ }
+
+        </script>
+        }
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,43 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31005.135
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Netflix", "Netflix\Netflix.csproj", "{0BAB936A-9704-4314-8490-9DB1BCD96918}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Netflix.Data", "Netflix.Data\Netflix.Data.csproj", "{30EE2989-8935-48D1-9CEA-112448C35C20}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Netflix.Model", "Netflix.Model\Netflix.Model.csproj", "{072510A3-D296-4B21-83FC-333ABBAAF03B}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Netflix.Service", "Netflix.Service\Netflix.Service.csproj", "{4D6F473A-E60E-48EC-BF1D-FE43875201C1}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0BAB936A-9704-4314-8490-9DB1BCD96918}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0BAB936A-9704-4314-8490-9DB1BCD96918}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0BAB936A-9704-4314-8490-9DB1BCD96918}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0BAB936A-9704-4314-8490-9DB1BCD96918}.Release|Any CPU.Build.0 = Release|Any CPU
+		{30EE2989-8935-48D1-9CEA-112448C35C20}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{30EE2989-8935-48D1-9CEA-112448C35C20}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{30EE2989-8935-48D1-9CEA-112448C35C20}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{30EE2989-8935-48D1-9CEA-112448C35C20}.Release|Any CPU.Build.0 = Release|Any CPU
+		{072510A3-D296-4B21-83FC-333ABBAAF03B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{072510A3-D296-4B21-83FC-333ABBAAF03B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{072510A3-D296-4B21-83FC-333ABBAAF03B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{072510A3-D296-4B21-83FC-333ABBAAF03B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4D6F473A-E60E-48EC-BF1D-FE43875201C1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4D6F473A-E60E-48EC-BF1D-FE43875201C1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4D6F473A-E60E-48EC-BF1D-FE43875201C1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4D6F473A-E60E-48EC-BF1D-FE43875201C1}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E137E030-99B6-402C-89A1-01D2B7CFE593}
+	EndGlobalSection
+EndGlobal

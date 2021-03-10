@@ -1,0 +1,13 @@
+﻿.container h2{
+    margin-bottom:50px;
+    margin-top:50px;
+}
+.headingcolor {
+    background: #1eb1e9;
+}
+.bodycolor {
+    background: #dee2e6;
+}
+.table-bordered > tbody > tr > td {
+    border: 3px solid white;
+}
